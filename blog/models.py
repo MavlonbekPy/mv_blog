@@ -19,4 +19,4 @@ class Post(models.Model):
     admin_photo.allow_tags = True
 
     def __str__(self):
-        return self.titl
+        return self.title
