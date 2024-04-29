@@ -22,5 +22,7 @@ def blog_view(request):
 
 
 def blog_single(request, pk):
-    post = Post.objects.get(request=request, pk=pk)
+    post = Post.objects.get(pk=pk)
+    return render(request, 'blog-single.html', context={'post': post})
+
 

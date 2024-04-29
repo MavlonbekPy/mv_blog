@@ -1,19 +1,19 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 
 <meta http-equiv="content-type" content="text/html;charset=utf-8"/>
 <head>
     <meta charset="utf-8">
-    <title>Toshkeniston</title>
-    <meta name="author" content="Azimjon Pulatov">
-    <meta property="og:site_name" content="Azimjon's Blog"/>
+    <title>{{ post.title }}</title>
+    <meta name="author" content="Mavlonbek Eraliyev">
+    <meta property="og:site_name" content="Mavlonbek's Blog"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta property="og:description"
-          content="Toshkeniston10 yoshimda Toshkentga ko&#x27;chganmiz, eng &quot;bag&#x27;ri keng&quot; shaharga.Noto&#x27;g&#x27;ri tushunmang, eng bag&#x27;ri keng insonlar ham Toshkentda. 14">
     <link href="../../static/assets/css/flexgridcombo.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-    <link href="../../static/assets/css/style67d9.css?version=2" rel="stylesheet">
-    <link rel="shortcut icon" type="image/jpg" href="../../static/assets/favicon.html">
+    {#    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">#}
+    <link rel="stylesheet" href="/static/css/bootstrap.min.css/">
+    <link href="/static/assets/css/style67d9.css?version=2" rel="stylesheet">
+    <link rel="shortcut icon" type="image/jpg" href="/static/assets/favicon.html">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
 </head>
@@ -22,13 +22,11 @@
     <div class="container">
         <div class="align-items-center flex">
             <div class="logo-wrapper">
-                <a class="logo" href="../../index.html">Azimjon's Blog</a>
+                <a class="logo" href="/">Mavlonbek's Blog</a>
             </div>
             <ul class="nav align-items-center">
-                <li><a class="list-item" href="https://42.uz/">42</a></li>
-                <li><a class="list-item" href="../index.html">Blog</a></li>
-                <li><a class="list-item" href="../../talks/index.html">Talks</a></li>
-                <li><a class="list-item" href="https://t.me/s/lazyprogrammer" target="_blank">Channel</a></li>
+                <li><a class="list-item" href="/blog/">Blog</a></li>
+                <li><a class="list-item" href="https://t.me/mavlonbekpy/" target="_blank">Channel</a></li>
             </ul>
             <div class="burger-menu">
                 <div class="bar bar--top"></div>
@@ -45,30 +43,21 @@
     <div class="container">
         <div class="row article-wrapper justify-center align-top">
             <div class="article-header col-md-8">
-                <h1 class="title">Toshkeniston</h1>
+                <h1 class="title">{{ post.title }}</h1>
                 <div class="date">
-                    <span>25 April, 2023</span>
+                    <span>{{ post.created_at }}</span>
                 </div>
             </div>
             <article class="content col-md-8 col-12">
-                <h1>Toshkeniston<br></h1>
+                <h1>{{ post.title }}<br></h1>
                 <address style="display: none"><br></address>
-                <p>10 yoshimda Toshkentga ko'chganmiz, eng "bag'ri keng" shaharga.</p>
-                <p>Noto'g'ri tushunmang, eng bag'ri keng insonlar ham Toshkentda. 14 yil ilgari "propiska" shu qadar
-                    qiyin masala ediki, hatto odamlar propiska uchun oila qurishardi. Propiskasizlar "ovlanib", kata
-                    jarimaga tortilardi - ayniqsa har yili Dekabr oyida.</p>
-                <p>Qonuniy yashashni xohlardik - vaqtinchalik propiskaga topshirardik. Oylab kutardik, chiqmasdi. Bir
-                    kishini maslahatiga ko'ra bir kuni "uchastkavoy"ga aroq oborib berdik, darrov tezlashib ketgandi.&nbsp;</p>
-                <p>Oxirigi marta, 2017-yilda vaqtincha propiskaga kirish uchun qo'limda nomer bilan 3 tarafdan rasmga
-                    olishgandi - jinoyatchidek. Viloyatdan kelganlar hali jinoyat sodir qilishga ulgurmagan jinoyatchi
-                    sifatida ko'rilardi. O'qish ham, ishlash ham qiyin edi.</p>
-                <p>Yetmaganiga ko'chalarda "shu vatan hammamizniki" deb yozib qo'yardi.</p>
+                <p>{{ post.description }}</p>
             </article>
             <div class="div col-lg-7 col-md-8 col-12">
                 <div class="subscribe-form " id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form">
                     <h6>Obuna Bo'ling</h6>
                     <p>
-                        Yangi maqola, maruza va darslarimni <a href="https://t.me/lazyprogrammer">@lazyprogrammer</a>
+                        Kundalik postlarimni <a href="https://t.me/mavlonbekpy/">@mavlonbekpy</a>
                         telegram kanalimda topishingiz mumkin.
                     </p>
                 </div>
@@ -76,13 +65,13 @@
             <ul class="custom-pagination col-md-8 col-12">
                 <div class="pagination-list row">
                     <li class="col prev">
-                        <a href="../kasal-bolmang/index.html" title="Kasal bo&#x27;lmang.">
+                        <a href="/" title="Kasal bo&#x27;lmang.">
                             &larr; Previous
                         </a>
                     </li>
-                    <li class="col"><a href="../index.html">See More</a></li>
+                    <li class="col"><a href="/">See More</a></li>
                     <li class="col next">
-                        <a href="../million-dollarlik-imkoniyat/index.html" title="Million Dollarlik Imkoniyat">
+                        <a href="/" title="Million Dollarlik Imkoniyat">
                             Next &rarr;
                         </a>
                     </li>
@@ -95,14 +84,14 @@
     <div class="container">
         <div class="row">
             <p>
-                &copy; 2024 azimjon.com
+                &copy; 2024 mavlonbek.com
             </p>
         </div>
     </div>
 </footer>
-<script src="../../static/assets/js/ScrollMonitor.min.js"></script>
-<script src="../../static/assets/js/TweenMax.min.js"></script>
-<script src="../../static/assets/js/main.js"></script>
+<script src="/static/assets/js/ScrollMonitor.min.js"></script>
+<script src="/static/assets/js/TweenMax.min.js"></script>
+<script src="/static/assets/js/main.js"></script>
 </body>
 
 </html>
