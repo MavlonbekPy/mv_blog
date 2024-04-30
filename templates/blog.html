@@ -10,7 +10,8 @@
     <meta property="og:site_name" content="Mavlonbek's Blog"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="{% static 'assets/css/flexgridcombo.css' %}" rel="stylesheet">
-    <link rel="stylesheet" href="/static/css/bootstrap.min.css/">
+    {#        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">#}
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
     <link href="/static/assets/css/style67d9.css?version=2" rel="stylesheet">
     <link rel="shortcut icon" type="image/jpg" href="../static/assets/favicon.html">
     <meta name="msapplication-TileColor" content="#da532c">
@@ -48,7 +49,7 @@
             <div id="archive" class="col-md-7">
 
                 {% for post in posts %}
-{#                    <h4>{{ post.created_at|date:"Y" }}</h4>#}
+                    {#                    <h4>{{ post.created_at|date:"Y" }}</h4>#}
                     <ul class="list-wrapper">
                         <li>
                             <a class="list-item" href="/blog-single/{{ post.id }}/">
