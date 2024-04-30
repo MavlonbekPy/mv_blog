@@ -45,7 +45,7 @@
             <div class="article-header col-md-8">
                 <h1 class="title">{{ post.title }}</h1>
                 <div class="date">
-                    <span>{{ post.created_at }}</span>
+                    <span>{{ post.created_at|date:"M d -- Y" }}</span>
                 </div>
             </div>
             <article class="content col-md-8 col-12">
@@ -64,17 +64,17 @@
             </div>
             <ul class="custom-pagination col-md-8 col-12">
                 <div class="pagination-list row">
-                    <li class="col prev">
-                        <a href="/" title="Kasal bo&#x27;lmang.">
-                            &larr; Previous
-                        </a>
-                    </li>
-                    <li class="col"><a href="/">See More</a></li>
-                    <li class="col next">
-                        <a href="/" title="Million Dollarlik Imkoniyat">
-                            Next &rarr;
-                        </a>
-                    </li>
+{#                    <li class="col prev">#}
+{#                        <a href="/" title="Kasal bo&#x27;lmang.">#}
+{#                            &larr; Previous#}
+{#                        </a>#}
+{#                    </li>#}
+                    <li class="col"><a href="/blog/">See More</a></li>
+{#                    <li class="col next">#}
+{#                        <a href="/" title="Million Dollarlik Imkoniyat">#}
+{#                            Next &rarr;#}
+{#                        </a>#}
+{#                    </li>#}
                 </div>
             </ul>
         </div>

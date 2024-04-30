@@ -2,9 +2,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<!-- Mirrored from azimjon.com/ by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 27 Apr 2024 08:57:39 GMT -->
-<!-- Added by HTTrack -->
-<meta http-equiv="content-type" content="text/html;charset=utf-8"/><!-- /Added by HTTrack -->
+<meta http-equiv="content-type" content="text/html;charset=utf-8"/>
 <head>
     <meta charset="utf-8">
     <title>Mavlonbek's Blog</title>
@@ -13,9 +11,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
           content="I am Mavlonbek Eraliyev, a 18-year-old Software Engineer from Tashkent, Uzbekistan, currently living in Akhangaran">
-    <meta name="og:image" content="assets/../static/images/mavlonbek.jpeg">
-    <link href="/static/assets/css/flexgridcombo.css" rel="stylesheet">
-{#    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">#}
+    <meta name="og:image" content="{% static 'assets/images/mavlonbek.jpeg' %}">
+    <link href="{% static '/assets/css/flexgridcombo.css' %}" rel="stylesheet">
     <link rel="stylesheet" href="../static/css/bootstrap.min.css/">
     <link href="/static/assets/css/style67d9.css?version=2" rel="stylesheet">
     <link rel="shortcut icon" type="image/jpg" href="{% static 'assets/../static/favicon.html' %}">
@@ -47,22 +44,22 @@
             <div class="col-xl-8 col-lg-10 col-12 stagger-animation">
                 <div class="about flex align-items-center">
                     <img class="anim-item profile-picture
-                                align-self-start" src="assets/../static/images/mavlonbek.jpeg" alt="Mavlonbek"/>
+                                align-self-start" src="{% static 'assets/images/mavlonbek.jpeg' %}" alt="Mavlonbek"/>
                     <div class="about-detail anim-item">
                         <h1 class="title">Mavlonbek Eraliyev</h1>
                         <h3 class="desc">Software Engineer</h3>
                         <div class="social-links flex
                                     align-items-center">
                             <a class="icon-youtube" target="_blank" href="https://www.instagram.com/___mavlon/">
-                                <img src="static/assets/images/icons/instagram.svg" width="26"/>
+                                <img src="{% static 'assets/images/icons/instagram.svg' %}" width="26"/>
                             </a>
                             <a class="icon-github" target="_blank" href="https://github.com/mavlonbekpy"></a>
                             <a class="icon-linkedin" target="_blank"
                                href="https://www.linkedin.com/in/mavlon-eraliyev-690b00246/">
-                                <img src="static/assets/images/icons/linkedin.svg" width="22"/>
+                                <img src="{% static 'assets/images/icons/linkedin.svg' %}" width="22"/>
                             </a>
                             <a class="icon-telegram" target="_blank" href="https://t.me/mavlonbekpy">
-                                <img src="static/assets/images/icons/telegram.svg" width="22"/>
+                                <img src="{% static 'assets/images/icons/telegram.svg' %}" width="22"/>
                             </a>
                         </div>
                     </div>
@@ -87,9 +84,9 @@
         </div>
     </div>
 </footer>
-<script src="static/assets/js/ScrollMonitor.min.js"></script>
-<script src="static/assets/js/TweenMax.min.js"></script>
-<script src="static/assets/js/main.js"></script>
+<script src="{% static 'assets/js/ScrollMonitor.min.js' %}"></script>
+<script src="{% static 'assets/js/TweenMax.min.js' %}"></script>
+<script src="{% static 'assets/js/main.js' %}"></script>
 </body>
 
 </html>
