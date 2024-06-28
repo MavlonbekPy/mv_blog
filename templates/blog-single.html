@@ -43,15 +43,15 @@
     <div class="container">
         <div class="row article-wrapper justify-center align-top">
             <div class="article-header col-md-8">
-                <h1 class="title">{{ post.title }}</h1>
+                <h1 class="title">{{ post.title | safe }}</h1>
                 <div class="date">
-                    <span>{{ post.created_at|date:"M d -- Y" }}</span>
+                    <span>{{ post.created_at|date:"M d -- Y" | safe }}</span>
                 </div>
             </div>
             <article class="content col-md-8 col-12">
                 <h1>{{ post.title }}<br></h1>
                 <address style="display: none"><br></address>
-                <p>{{ post.description }}</p>
+                <p>{{ post.description | safe }}</p>
             </article>
             <div class="div col-lg-7 col-md-8 col-12">
                 <div class="subscribe-form " id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form">
