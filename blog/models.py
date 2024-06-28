@@ -25,4 +25,4 @@ class Post(models.Model):
 class Img(models.Model):
     image = models.ImageField(upload_to='main_img/', default=".../static/assets/images/mavlonbek.jpeg", blank=True,
                               null=True)
-    is_published = models.BooleanField(default=False)
+    is_published = models.BooleanField(default=True)
