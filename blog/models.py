@@ -20,7 +20,8 @@ class Post(models.Model):
 
     def __str__(self):
         return self.title
-        
+
+
 class Img(models.Model):
     image = models.ImageField(upload_to='main_img/', default=".../static/assets/images/mavlonbek.jpeg", blank=True,
                               null=True)
