@@ -27,6 +27,10 @@ DEBUG = True
 
 ALLOWED_HOSTS = ["*"]
 
+CSRF_TRUSTED_ORIGINS = [
+    'https://mavlonbek.uz',
+    'https://www.mavlonbek.uz'
+]
 # Application definition
 
 INSTALLED_APPS = [
